@@ -1,0 +1,12 @@
+[Unit]
+Reverse Proxy lab
+
+[Service]
+Type=simple
+Environment=NODE_PORT=3000
+Environment=NODE_ENV=production
+ExecStart=/home/vagrant/.nvm/versions/node/v14.16.0/bin/node /home/vagrant/simple-server-2420/server.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
