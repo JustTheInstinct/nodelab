@@ -1,4 +1,4 @@
-# Installation
+# Installation (From master branch)
 1. Clone Repository into desired directory
 2. Replace /etc/nginx/default with the provided default file
 3. Move nodeapp.service into /etc/systemd/ and enable it (or start for one time use per boot)
